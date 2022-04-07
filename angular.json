@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "9053dd6e-f76d-421d-8ba8-312586376e81"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -7,8 +10,6 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "inlineTemplate": true,
-          "inlineStyle": true,
           "style": "scss",
           "skipTests": true
         },
@@ -55,9 +56,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",{ "input": "./node_modules/bootstrap/dist/css/bootstrap.css" }
             ],
-            "scripts": []
+            "scripts": ["./node_modules/jquery/dist/jquery.js", "./node_modules/bootstrap/dist/js/bootstrap.js"]
           },
           "configurations": {
             "production": {
