@@ -1,11 +1,17 @@
 <div class="row">
+    <!--Imagen lateral de login-->
     <div class="col-md-6">
         <img src="assets/img/Inici.jpg" class="img-principal" alt="fondo-inicio">
     </div>
-
+    <!--Espacio de login-->
     <div class="col-md-6">
+        <!--Logo y bienvenida-->
         <img src="assets/img/Logo-facultad.jpg" class="LogoFac" alt="Logo facultad">
-        <h1 class="text-center pt-5 pb-5">Bienvenido de nuevo!</h1>
+        <h1 class="text-center pt-5 pb-5">Bienvenido!</h1>
+        <div class="titulo-ini text-center">
+            <h3>SISTEMA DE ASIGNACION DE AULAS</h3>
+        </div>
+        <!--Formulario de solicitud de datos de ingreso-->
         <div class="row-correo-ingreso">
             <div class="row pt-5 pb-3">
                 <div class="col-md-6">
@@ -24,8 +30,9 @@
                 </div>
             </div>
         </div>
+        <!--Boton de validacion de datos y enlace por olvido de contraseña-->
         <div class="text-center pt-5">
-            <button>INICIAR SESION</button>
+            <button (click)="login()">INICIAR SESION</button>
             <p>Olvidaste tu contraseña?</p>
         </div>
     </div>
