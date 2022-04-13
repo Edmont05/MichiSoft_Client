@@ -10,6 +10,7 @@ import { SidebarModule } from './sidebar/sidebar.module';
 import { TeacherModule } from './teacher/teacher.module';
 import { TopicModule } from './topic/topic.module';
 
+
 @NgModule({
   declarations: [
     AppComponent,
