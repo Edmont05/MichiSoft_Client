@@ -1,0 +1,156 @@
+<!--Barra Lateral derecha-->
+<div class="row">
+    <app-sidebar class="col-md-3"></app-sidebar>
+    <div class="col-md-9">
+        <div class="contenedorCuerpo pt-5" id="contenidoPrincipal">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row row-form">
+                                    <div class="col-md-3">
+                                        <label><strong>Docente:</strong></label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <input type="text" disabled style="width: 100%;">
+                                    </div>
+                                </div>
+                                <div class="row row-form">
+                                    <div class="col-md-3">
+                                        <label><strong>Materia:</strong></label>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <select style="width: 100%;">
+                                            <option>Calculo 1</option>
+                                            <option>Calculo 2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row row-form">
+                                    <div class="col-md-3">
+                                        <label><strong>Grupo(s):</strong></label>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <select style="width: 100%;">
+                                            <option> 1</option>
+                                            <option> 2</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label><strong>Nº prdos</strong></label>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <select style="width: 100%;">
+                                            <option> 1</option>
+                                            <option> 2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row-form">
+                                    <div class="input-group row">
+                                        <div class="input-group-append col-md-2">
+                                            <button class="btn btn-outline-secondary" (click)="d1.toggle()"
+                                                type="button">
+                                                <img src="../../../../assets/img/calendar.png">
+                                            </button>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="row">
+                                                <input class="form-control" placeholder="dd-mm-yyyy"
+                                                    [(ngModel)]="startDate" ngbDatepicker #d1="ngbDatepicker"
+                                                    readonly="readonly" container="body">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row row-form">
+                                    <div class="col-md-4">
+                                        <label><strong>Nº Estudiantes: </strong></label>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="row">
+                                            <input type="number">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row-form">
+                                    <label><strong>Motivo de reserva: </strong></label>
+                                </div>
+                                <div class="row row-form">
+                                    <textarea rows="4" style="width: 93%; margin-left: 0.8rem;"></textarea>
+                                </div>
+                                <div class="row row-form">
+                                    <div class="text-center">
+                                        <button class="btn btn-add-reservation">Solicitar Aula</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="row pb-2">
+                            <div class="text-center">
+                                <button class="btn btn-schedule">06:45</button>
+                            </div>
+                        </div>
+                        <div class="row pb-2">
+                            <div class="text-center">
+                                <button class="btn btn-schedule">08:15</button>
+                            </div>
+                        </div>
+                        <div class="row pb-2">
+                            <div class="text-center">
+                                <button class="btn btn-schedule">09:45</button>
+                            </div>
+                        </div>
+                        <div class="row pb-2">
+                            <div class="text-center">
+                                <button class="btn btn-schedule">11:15</button>
+                            </div>
+                        </div>
+                        <div class="row pb-2">
+                            <div class="text-center">
+                                <button class="btn btn-schedule">12:45</button>
+                            </div>
+                        </div>
+                        <div class="row pb-2">
+                            <div class="text-center">
+                                <button class="btn btn-schedule">14:15</button>
+                            </div>
+                        </div>
+                        <div class="row pb-2">
+                            <div class="text-center">
+                                <button class="btn btn-schedule">15:45</button>
+                            </div>
+                        </div>
+                        <div class="row pb-2">
+                            <div class="text-center">
+                                <button class="btn btn-schedule">17:15</button>
+                            </div>
+                        </div>
+                        <div class="row pb-2">
+                            <div class="text-center">
+                                <button class="btn btn-schedule">18:45</button>
+                            </div>
+                        </div>
+                        <div class="row pb-2">
+                            <div class="text-center">
+                                <button class="btn btn-schedule">20:15</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="card">
+                            <div class="card-body">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Etiqueta hr modificada para hacer linea de division de contenedor de izquierda y derecha-->
+</div>

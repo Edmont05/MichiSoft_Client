@@ -21,4 +21,7 @@ export class HeaderComponent implements OnInit {
     return homeRoute;
   }
 
+  logout(){
+    this.router.navigate(['/']);
+  }
 }
